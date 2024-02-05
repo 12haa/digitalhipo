@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Icons } from "@/components/Icons";
 import NavItems from "@/components/NavItems";
 import { buttonVariants } from "@/components/ui/button";
+import Cart from "@/components/Cart";
 
 const Navbar = () => {
   const user = null;
