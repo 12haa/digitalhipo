@@ -20,7 +20,7 @@ const Cart = () => {
   const fee = 1;
   return (
     <Sheet>
-      <SheetTrigger className="group -m-2 flex items-center p-2">
+      <SheetTrigger className="group -m-2 flex items-center p-2 ">
         <ShoppingCart
           aria-hidden="true"
           className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500 "
@@ -76,6 +76,19 @@ const Cart = () => {
             <div className="relative mb-4 h-60 w-60 text-muted">
               <Image src="/hippo-empty-cart.png" alt="empty cart" fill />
             </div>
+            <div className="text-xl font-semibold"> Your Cart Is Empty</div>
+            <SheetTrigger asChild>
+              <Link
+                href="/products"
+                className={buttonVariants({
+                  variant: "link",
+                  size: "sm",
+                  className: "text-sm text-muted-foreground",
+                })}
+              >
+                Add item's to your cart to checkout.
+              </Link>
+            </SheetTrigger>
           </div>
         )}
       </SheetContent>

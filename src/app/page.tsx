@@ -45,12 +45,12 @@ export default function Home() {
         </div>
       </MaxWidthWrapper>
       <section className="border-t border-gray-200 bg-gray-50">
-        <MaxWidthWrapper className="p-y-20">
+        <MaxWidthWrapper className="py-20">
           <div className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-10">
             {perks.map((p, i) => (
               <div
                 key={p.name}
-                className="text-center md:flex md:items-start md:text=left lg:block lg:text-center "
+                className="text-center md:flex md:items-start md:text-left lg:block lg:text-center "
               >
                 <div className="md:flex-shrink-0 flex justify-center">
                   <div className="h-16 w-16 flex items-center justify-center rounded-full bg-blue-100 text-blue-900">
